@@ -1,0 +1,6 @@
+
+<div class="d-flex justify-content-center align-items-center flex-column" style="height:100vh !important">
+    <div class="p-2 mb-5"><img class="star" src="../../assets/images/star.png"></div>
+    <div  *ngIf="generatingNumber" class="p-2 text-light"> Getting Magic Number in <span class="second"> {{seconds}} </span> &nbsp; Seconds</div>
+    <div  *ngIf="!generatingNumber" class="p-2"><button class="btn btn-primary btn-lg" (click)="fetchRandomNumber()">Generate lucky number</button></div>
+  </div>
